@@ -55,6 +55,15 @@ int main(void) {
 	// Complete your code here
     switch (violation_type) {
         case 1:
+        fine = 100 ;
+            break;
+        
+        case 2:
+        fine = 150 ;
+            break;
+
+        case 3:
+        fine = 50 ;
             break;
 
         default:
@@ -66,8 +75,11 @@ int main(void) {
 	// Complete your code here
 	
 	if (repeat_offense == 1) {
-		// todo
+		fine = fine *2 ;
 	}
+    else{
+        fine = fine ;
+    }
 
     /* Output final fine */
     printf("Fine amount: %.2f\n", fine);

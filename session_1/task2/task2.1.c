@@ -47,9 +47,26 @@ int main(int argc, char *argv[]) {
     
     // Complete your code here
 	switch(operation){
-		case :
+		case '+':
+        result=num1+num2 ;
             break;
-		default:
+        case '-':
+        result=num1-num2 ;
+            break;
+        case 'x':
+        result=num1 * num2 ;
+            break;
+        case'/':
+        if(num2==0){
+            printf("Error, division by zero!");
+        }
+        
+        else{
+            result= num1/num2 ;
+        }
+
+            
+        default:
 			printf("Operation not defined!\n");
 	}
     

@@ -23,6 +23,7 @@ int main(void) {
 	
     float account_balance;
 	float purchase_amount;
+	float Remaining_balance;
 	
 	printf("Enter account balance: ");
     scanf("%f", &account_balance);
@@ -31,9 +32,10 @@ int main(void) {
     scanf("%f", &purchase_amount);
 	
 	// Complete your code here
-	if (){  // todo
+	if (account_balance>=purchase_amount){
+		Remaining_balance= account_balance- purchase_amount ; // todo
 		// todo
-		printf("Transaction Approved. Remaining balance %.2f\n", account_balance);
+		printf("Transaction Approved. Remaining balance %.2f\n", Remaining_balance);
 	}
 	else{
 		printf("Insufficient Balance!\n");
