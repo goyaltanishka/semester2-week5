@@ -13,6 +13,11 @@ int main(void){
  *         break
  */
 	char choice;
+	do{
+	printf("Enter 'q' to quit:");
+	scanf(" %c",&choice);
+	printf("choice%c\n", choice);
+	} while(choice!= 'q');
 	// complete the rest of the code here
 	
     return 0;
